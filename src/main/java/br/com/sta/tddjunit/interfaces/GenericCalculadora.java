@@ -4,7 +4,7 @@ package br.com.sta.tddjunit.interfaces;
  *
  * @author jonat_000
  */
-public interface Calculadora {
+public interface GenericCalculadora {
     
     /*
     * Responsável por somar 2 números
