@@ -8,19 +8,19 @@ import static org.junit.Assert.*;
  * @author jonat_000
  */
 public class CalculadoraTest {
-    
+
     /**
-     * Instanciando a classe calculadora para realizar os calculos
-     * e assim obtermos os retornos para os testes             
-    */
+     * Instanciando a classe calculadora para realizar os calculos e assim
+     * obtermos os retornos para os testes
+     */
     private final Calculadora calc = new Calculadora();
-    
+
     public CalculadoraTest() {
     }
 
     /**
-     * Método recebe como entrada os valores 10 e 20
-     * esperando uma saída igual a 30
+     * Método recebe como entrada os valores 10 e 20 
+     * e espera uma saída igual a 30
      */
     @Test
     public void testSomar() {
@@ -28,8 +28,8 @@ public class CalculadoraTest {
     }
 
     /**
-     * Método recebe como entrada os valores 50 e 30
-     * esperando uma saída igual a 20
+     * Método recebe como entrada os valores 50 e 30 
+     * e espera uma saída igual a 20
      */
     @Test
     public void testSubtrair() {
@@ -37,8 +37,8 @@ public class CalculadoraTest {
     }
 
     /**
-     * Método recebe como entrada os valores 2 e 2
-     * esperando uma saída igual a 4
+     * Método recebe como entrada os valores 2 e 2 
+     * e espera uma saída igual a 4
      */
     @Test
     public void testMultiplicar() {
@@ -46,17 +46,17 @@ public class CalculadoraTest {
     }
 
     /**
-     * Método recebe como entrada os valores 10 e 0
-     * esperando como saída uma exceção do tipo ArithmeticException
+     * Método recebe como entrada os valores 10 e 0 
+     * e espera como saída uma exceção do tipo ArithmeticException 
      * que neste caso representa uma divisão por ZERO
      */
-    @Test 
+    @Test
     public void testDividir() {
         try {
             calc.dividir(10, 0);
-        } catch(ArithmeticException ex) {
+        } catch (ArithmeticException ex) {
             System.out.println("Divisão por zero!");
         }
     }
-    
+
 }
