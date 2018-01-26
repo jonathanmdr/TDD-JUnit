@@ -9,13 +9,18 @@ import static org.junit.Assert.*;
  */
 public class CalculadoraTest {
     
+    /**
+     * Instanciando a classe calculadora para realizar os calculos
+     * e assim obtermos os retornos para os testes             
+    */
     private final Calculadora calc = new Calculadora();
     
     public CalculadoraTest() {
     }
 
     /**
-     * Test of somar method, of class Calculadora.
+     * Método recebe como entrada os valores 10 e 20
+     * esperando uma saída igual a 30
      */
     @Test
     public void testSomar() {
@@ -23,7 +28,8 @@ public class CalculadoraTest {
     }
 
     /**
-     * Test of subtrair method, of class Calculadora.
+     * Método recebe como entrada os valores 50 e 30
+     * esperando uma saída igual a 20
      */
     @Test
     public void testSubtrair() {
@@ -31,7 +37,8 @@ public class CalculadoraTest {
     }
 
     /**
-     * Test of multiplicar method, of class Calculadora.
+     * Método recebe como entrada os valores 2 e 2
+     * esperando uma saída igual a 4
      */
     @Test
     public void testMultiplicar() {
@@ -39,7 +46,9 @@ public class CalculadoraTest {
     }
 
     /**
-     * Test of dividir method, of class Calculadora.
+     * Método recebe como entrada os valores 10 e 0
+     * esperando como saída uma exceção do tipo ArithmeticException
+     * que neste caso representa uma divisão por ZERO
      */
     @Test 
     public void testDividir() {
