@@ -13,7 +13,7 @@ public interface GenericCalculadora {
      * @param num2 -> recebe um valor do tipo double
      * @return -> retorna um resultado do tipo double
      */
-    double somar(double num1, double num2);
+    public double somar(double num1, double num2);
 
     /**
      * Responsável por subtrair 2 números
@@ -22,7 +22,7 @@ public interface GenericCalculadora {
      * @param num2 -> recebe um valor do tipo double
      * @return -> retorna um resultado do tipo double
      */
-    double subtrair(double num1, double num2);
+    public double subtrair(double num1, double num2);
 
     /**
      * Responsável por multiplicar 2 números
@@ -31,7 +31,7 @@ public interface GenericCalculadora {
      * @param num2 -> recebe um valor do tipo double
      * @return -> retorna um resultado do tipo double
      */
-    double multiplicar(double num1, double num2);
+    public double multiplicar(double num1, double num2);
 
     /**
      * Responsável por dividir dois números 
@@ -41,6 +41,6 @@ public interface GenericCalculadora {
      * @param num2 -> recebe um valor do tipo double
      * @return -> retorna um resultado do tipo double
      */
-    double dividir(double num1, double num2) throws ArithmeticException;
+    public double dividir(double num1, double num2) throws ArithmeticException;
 
 }
