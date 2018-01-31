@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="br.com.sta.tddjunit.classes.CalculadoraTest" name="testSubtrair" time="0"/>
+  <testcase classname="br.com.sta.tddjunit.classes.CalculadoraTest" name="testSubtrair" time="0.001"/>
   <testcase classname="br.com.sta.tddjunit.classes.CalculadoraTest" name="testSomar" time="0"/>
   <testcase classname="br.com.sta.tddjunit.classes.CalculadoraTest" name="testMultiplicar" time="0"/>
   <testcase classname="br.com.sta.tddjunit.classes.CalculadoraTest" name="testDividir" time="0"/>
