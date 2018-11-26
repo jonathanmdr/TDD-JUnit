@@ -2,20 +2,24 @@ package br.com.sta.tddjunit.classes;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.rules.ExpectedException;
 
 /**
  *
  * @author jonat_000
  */
 public class CalculadoraTest {
+        
+    private Calculadora calc;
+    
+    @Rule
+    public ExpectedException expectedException = ExpectedException.none();
 
-    /**
-     * Instanciando a classe calculadora para realizar os calculos e assim
-     * obtermos os retornos para os testes
-     */
-    private final Calculadora calc = new Calculadora();
-
-    public CalculadoraTest() {
+    @Before
+    public void before() {
+        this.calc = new Calculadora();
     }
 
     /**
@@ -46,17 +50,19 @@ public class CalculadoraTest {
     }
 
     /**
+     * Método recebe como entrada os valores 10 e 2
+     * e espera como saída igual a 5.
+     * 
      * Método recebe como entrada os valores 10 e 0 
      * e espera como saída uma exceção do tipo ArithmeticException 
      * que neste caso representa uma divisão por ZERO
      */
     @Test
-    public void testDividir() {
-        try {
-            calc.dividir(10, 0);
-        } catch (ArithmeticException ex) {
-            System.out.println("Divisão por zero!");
-        }
+    public void testDividir() throws ArithmeticException {
+        assertEquals(5, calc.dividir(10, 2), 0);
+        
+        expectedException.expect(ArithmeticException.class);
+        calc.dividir(10, 0);
     }
 
 }

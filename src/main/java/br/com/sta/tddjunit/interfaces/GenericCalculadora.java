@@ -37,10 +37,10 @@ public interface GenericCalculadora {
      * Responsável por dividir dois números 
      * tratativa de possível divisão por ZERO
      *     
-     * @param num1 -> recebe um valor do tipo double
-     * @param num2 -> recebe um valor do tipo double
-     * @return -> retorna um resultado do tipo double
+     * @param num1 -> recebe um valor do tipo int
+     * @param num2 -> recebe um valor do tipo int
+     * @return -> retorna um resultado do tipo int
      */
-    public double dividir(double num1, double num2) throws ArithmeticException;
+    public int dividir(int num1, int num2) throws ArithmeticException;
 
 }
